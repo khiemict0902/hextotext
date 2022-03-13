@@ -3,7 +3,6 @@ function myFunction() {
     var y = hexToAscii(x);
     document.getElementById("demo").innerHTML = y;
 
-
 //write function convert hexadecimal to ASCII format
 function hexToAscii(hex) {
     var str = '';
@@ -11,16 +10,12 @@ function hexToAscii(hex) {
         str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
     return str;
 }
-
-
-
 }
 
 let myText = document.getElementById("input");
 let myBtn = document.getElementById("myBtn");
 
-
-    myText.addEventListener("keyup", e => {
+myText.addEventListener("keyup", e => {
         e.preventDefault();
         if (e.key === "Enter") {
             myBtn.click();
@@ -28,7 +23,7 @@ let myBtn = document.getElementById("myBtn");
 
         
     })
-    myBtn.addEventListener("click", e => {
+myBtn.addEventListener("click", e => {
         myFunction();
     })
         
